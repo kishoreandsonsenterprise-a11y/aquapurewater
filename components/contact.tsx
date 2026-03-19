@@ -29,14 +29,7 @@ const contactInfo = [
     value: "AquaPureWater Pvt. Ltd., India",
     href: null,
     color: "bg-amber-500/10 text-amber-500",
-  },
-  {
-    icon: Clock,
-    label: "Business Hours",
-    value: "Mon-Fri | 9:00 AM - 6:00 PM",
-    href: null,
-    color: "bg-purple-500/10 text-purple-500",
-  },
+  }
 ]
 
 export function Contact() {
