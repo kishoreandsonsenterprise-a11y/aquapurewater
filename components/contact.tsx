@@ -84,12 +84,11 @@ export function Contact() {
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" />
-      
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div 
-          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+        <div
+          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             Contact Us
@@ -104,26 +103,24 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Contact Info */}
-          <div 
-            className={`lg:col-span-2 space-y-6 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-            }`}
+          <div
+            className={`lg:col-span-2 space-y-6 transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
+              }`}
           >
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-2">Contact Information</h3>
               <p className="text-muted-foreground">
-                Have questions about our products or services? We&apos;d love to hear from you. 
+                Have questions about our products or services? We&apos;d love to hear from you.
                 Send us a message and we&apos;ll respond as soon as possible.
               </p>
             </div>
-            
+
             <div className="space-y-4">
               {contactInfo.map((item, index) => (
-                <Card 
-                  key={item.label} 
-                  className={`border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300 group cursor-pointer ${
-                    isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
-                  }`}
+                <Card
+                  key={item.label}
+                  className={`border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300 group cursor-pointer ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+                    }`}
                   style={{ transitionDelay: `${200 + index * 100}ms` }}
                 >
                   <CardContent className="p-4">
@@ -152,24 +149,12 @@ export function Contact() {
                 </Card>
               ))}
             </div>
-            
-            {/* Map placeholder */}
-            <div className="aspect-[4/3] rounded-2xl bg-muted overflow-hidden relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">AquaPureWater Headquarters</p>
-                  <p className="text-sm text-muted-foreground">India</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Contact Form */}
-          <div 
-            className={`lg:col-span-3 transition-all duration-1000 delay-300 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
-            }`}
+          <div
+            className={`lg:col-span-3 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
+              }`}
           >
             <Card className="border-border/50 shadow-xl">
               <CardContent className="p-6 sm:p-8">
@@ -253,10 +238,10 @@ export function Contact() {
                         className="bg-background resize-none"
                       />
                     </div>
-                    <Button 
-                      type="submit" 
-                      size="lg" 
-                      className="w-full h-14 text-lg font-semibold group" 
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full h-14 text-lg font-semibold group"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
